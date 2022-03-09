@@ -2,6 +2,8 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
+You can view the latest version of Every.org's Charity API documentation at [docs.every.org](https://docs.every.org).
+
 ### Installation
 
 ```
