@@ -16,7 +16,7 @@ We will make a POST request to the specified webhook with information about the 
 
 You can set your webhook URL by editing your organization's profile at `every.org/<organization-slug>/admin/edit`.
 
-![Screen Shot 2021-08-27 at 2.55.39 PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4f25f134-fd2a-401f-95d0-e3282fa9dd02/Screen_Shot_2021-08-27_at_2.55.39_PM.png)
+![Image of adding webhook in admin interface](../../static/img/nonprofit-webhook.png)
 
 ## Data format
 
@@ -25,7 +25,7 @@ The webhook request will be a JSON-formatted string with the following propertie
 - `chargeId: <string>`
   - Unique ID to the donation. Matches the “Charge ID” of donations in the nonprofit Admin Dashboard.
 - `partnerDonationId: <string | undefined>`
-  - The partner donation ID as specified using our [Donate link](https://www.notion.so/Donate-link-df7cf5ba509c40c4928c99f7a4896dde) or [Donate Button](https://www.notion.so/Donate-Button-05acd160c86148efb9836bb5d908705f). `undefined` if not specified.
+  - The partner donation ID as specified using our [Donate link](../donate-link.md) or [Donate Button](../donate-button.md). `undefined` if not specified.
 - `firstName: <string | undefined>`
   - `undefined` if the donor chose not to share this info with the nonprofit.
 - `lastName: <string | undefined | null>`

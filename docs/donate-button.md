@@ -8,7 +8,7 @@ The open-source [Every.org](http://every.org) Donate button provides a beautiful
 
 [Click here to see a demo](https://embeds.every.org/0.2) showing what it looks like.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/58b1cf11-39aa-445d-bfcf-a624d1703b4d/donate-button.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/58b1cf11-39aa-445d-bfcf-a624d1703b4d/donate-button.gif)
+![Gif of donate button usage](../static/img/donate-button.gif)
 
 ## Usage
 

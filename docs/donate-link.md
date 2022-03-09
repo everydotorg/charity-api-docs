@@ -4,13 +4,13 @@ sidebar_position: 4
 
 # Donate Link
 
-The Donate link provides an interface for facilitating donations to nonprofits via [Every.org](http://Every.org). Compared to the Every.org [Donate Button](https://www.notion.so/Donate-Button-05acd160c86148efb9836bb5d908705f), the donate link provides more configurability over the donation flow on Every.org as well as more control over the experience in your own website or app.
+The Donate link provides an interface for facilitating donations to nonprofits via [Every.org](http://Every.org). Compared to the Every.org [Donate Button](./donate-link.md), the donate link provides more configurability over the donation flow on Every.org as well as more control over the experience in your own website or app.
 
 The basic format of a Donate link is as follows:
 
 `https://www.every.org/<nonprofit-identifier>/donate`
 
-The `nonprofit-identifier` token can be replaced by either the nonprofit’s primary slug (which you might have if you’re using [Nonprofit Search API](https://www.notion.so/Nonprofit-Search-API-731e285581dc47efbe306c59c139d528)) or with the nonprofit’s EIN.
+The `nonprofit-identifier` token can be replaced by either the nonprofit’s primary slug (which you might have if you’re using [Nonprofit Search API](./nonprofit-search.md)) or with the nonprofit’s EIN.
 
 ### Parameters
 
