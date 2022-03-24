@@ -28,13 +28,13 @@ This can be used client side or server side, the api key can be made public— i
 
 Get data about a nonprofit from the Every.org API.
 
-### JavaScript fetch
+#### JavaScript fetch
 
 ```jsx
 fetch("https://partners.every.org/v0.2/nonprofit/maps?apiKey=myPublicApiKey");
 ```
 
-### curl
+#### curl
 
 ```jsx
 curl "https://partners.every.org/v0.2/nonprofit/maps?apiKey=myPublicApiKey"
@@ -46,16 +46,95 @@ This is designed for very low latency and high throughput, so we recommend using
 
 Once you have an API key, then include it as a query parameter called `apiKey` like so, replacing the key with your real one:
 
-### JavaScript fetch
+#### JavaScript fetch
 
 ```jsx
 fetch("https://partners.every.org/v0.2/search/pets?apiKey=myPublicApiKey");
 ```
 
-### curl
+#### curl
 
 ```jsx
 curl "https://partners.every.org/v0.2/search/pets?apiKey=myPublicApiKey"
+```
+
+#### Filtering by tag
+
+You can filter the nonprofits returned by the search endpoint by using the `tags` parameter.
+
+You can query for multiple tags by joining them with a `,`, i.e. with
+`tags=humans,environment`, which will perform an OR filter and return nonprofits
+that match either the `humans` or `environment` tags.
+
+Below is the list of valid tags: (last updated 2022-03-23)
+
+```
+aapi-led
+adoption
+afghanistan
+animals
+athletics
+autism
+black-led
+buddhism
+cancer
+cats
+christianity
+climate
+conservation
+coronavirus
+culture
+dance
+disabilities
+disease
+dogs
+education
+environment
+filmandtv
+food-security
+freepress
+gender-equality
+health
+hinduism
+housing
+humans
+hurricane-laura
+immigrants
+indigenous-led
+indigenous-peoples
+islam
+judaism
+justice
+latine-led
+legal
+lgbt
+libraries
+mental-health
+middle-east
+museums
+music
+oceans
+poverty
+racial-justice
+refugees
+religion
+reproductive-justice
+research
+science
+seniors
+space
+theater
+transgender
+ukraine
+veterans
+visualart
+votingrights
+water
+wildfires
+wildlife
+women-led
+womens-health
+youth
 ```
 
 ## Response types
