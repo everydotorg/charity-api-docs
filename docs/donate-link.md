@@ -16,21 +16,26 @@ The `nonprofit-identifier` token can be replaced by either the nonprofit’s pri
 
 The link can also be customized with the following URL parameters which control various aspects of the donation experience.
 
-`amount` - specify donation amount.
+* `amount` - specify donation amount.
 
-`frequency` - specify donation frequency. Allowed values are `ONCE` or `MONTHLY`
+* `frequency` - specify donation frequency. Allowed values are `ONCE` or `MONTHLY`
 
-`firstName` - specify user first name.
+* `firstName` - specify user first name.
 
-`lastName` - specify user last name.
+* `lastName` - specify user last name.
 
-`no_exit` - If specified (with any value), then the background of the donation modal will be hidden.
+* `no_exit` - If specified (with any value), then the background of the donation modal will be hidden.
 
-`success_url` - specify a url to which to redirect the user after they have successfully completed their donation.
+* `success_url` - specify a url to which to redirect the user after they have successfully completed their donation.
+
+* `webhook_token` - Specify the token associated with your [Partner
+Webhook](./webhooks/partner-webhook.mdx). Including this parameter will cause a
+notification to be sent to your webhook for every donation completed via this
+donate link.
 
 ### Testing
 
-Replace `[www.every.org](http://www.every.org)` with `[staging.every.org](http://staging.every.org)` to create links that work against our staging environment. In the staging environment you can use the following test credit card credentials to verify functionality without spending real money:
+Replace `www.every.org` with `staging.every.org` to create links that work against our staging environment. In the staging environment you can use the following test credit card credentials to verify functionality without spending real money:
 
 Credit card #: 4242 4242 4242 4242
 
