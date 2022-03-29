@@ -1,0 +1,39 @@
+import RequestFormat from "./_request-format.mdx";
+
+# Webhooks
+
+:::tip Learn more
+
+Don't know what a webhook is? Learn more from this [What are
+webhooks?](https://zapier.com/blog/what-are-webhooks/) blog post.
+
+:::
+
+Every.org supports using webhooks to get notified when one of your donors
+completes a donation. After you set up your webhook, we will make a `POST`
+request to your webhook endpoint with information about the new donation.
+
+Every.org webhooks come in two flavors - the [Nonprofit Donation
+Webhook](./nonprofit-webhook.md) and the [Partner webhook](./partner-webhook.mdx).
+
+## Nonprofit Donation Webhook
+
+The Nonprofit Donation Webhook enables nonprofit admins to get notified every
+time a donation is made to their nonprofit.
+
+Read more about setting up a Nonprofit Donation
+Webhook for your nonprofit [here](./nonprofit-webhook.md).
+
+## Partner Webhook
+
+The Partner Webhook enables developers using a [Donate Link](../donate-link.md)
+to get notified every time a donation is completed via their link.
+
+Read more about setting up a Partner Webhook [here](./partner-webhook.mdx).
+
+## Data format
+
+Requests made by both the Nonprofit Donation and Partner webhooks follow the
+same format.
+
+<RequestFormat />

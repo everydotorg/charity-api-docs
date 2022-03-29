@@ -36,13 +36,16 @@ This documentation describes how to link to the donate flow for a nonprofit on E
 
 [Donate link](./donate-link.md)
 
-# Nonprofit Donation Webhook
+# Webhooks
 
-Nonprofits can get a webhook notification on every donation by going to their "Edit Profile" page and setting a webhook URL.
+Webhooks enable you to get notified every time one of your donors completes a donation. The Nonprofit Donation Webhook enables nonprofit admins to get notified 
+about donations to their nonprofit, while the Partner Webhook enables developers to get notified about donations made via their [Donate Link](./donate-link.md).
 
 ### View the docs
 
-[Nonprofit Donation Webhook](./webhooks/nonprofit-webhook.md)
+* [Webhooks Overview](./webhooks)
+* [Nonprofit Donation Webhook](./webhooks/nonprofit-webhook.mdx)
+* [Partner Webhook](./webhooks/partner-webhook.mdx)
 
 # Partners using our APIs
 
