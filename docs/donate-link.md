@@ -25,12 +25,19 @@ various aspects of the donation experience.
 
 - `amount` - specify donation amount.
 
+- `min_value` - specify a minimum value for the donation
+
 - `frequency` - specify donation frequency. Allowed values are `ONCE` or
   `MONTHLY`
 
-- `firstName` - specify user first name.
+- `email` - specify donor's email
 
-- `lastName` - specify user last name.
+- `firstName` - specify donor's first name.
+
+- `lastName` - specify donor's last name.
+
+- `description` - customize the text on the nonprofit's card in the donation
+  modal.
 
 - `no_exit` - If specified (with any value), then the background of the donation
   modal will be hidden.
@@ -38,10 +45,20 @@ various aspects of the donation experience.
 - `success_url` - specify a url to which to redirect the user after they have
   successfully completed their donation.
 
+- `partner_donation_id` - Specify a unique ID that you want to be associated
+  with this donation.
+
+- `require_share_info` - If present, requires that the donor share their contact
+  info for the donation.
+
+- `share_info` - Set whether sharing info is checked by default.
+
 - `webhook_token` - Specify the token associated with your
   [Partner Webhook](./webhooks/partner-webhook.mdx). Including this parameter
   will cause a notification to be sent to your webhook for every donation
   completed via this donate link.
+
+- `theme_color` - Customize the primary theme color of the donation modal.
 
 ### Testing
 
