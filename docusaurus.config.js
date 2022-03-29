@@ -66,6 +66,22 @@ const config = {
                 label: "Intro",
                 to: "/docs/intro",
               },
+              {
+                label: "Nonprofit Search",
+                to: "/docs/nonprofit-search"
+              },
+              {
+                label: "Donate Button",
+                to: "/docs/donate-button"
+              },
+              {
+                label: "Donate Link",
+                to: "/docs/donate-link"
+              },
+              {
+                label: "Webhooks",
+                to: "/docs/webhooks"
+              }
             ],
           },
         ],
