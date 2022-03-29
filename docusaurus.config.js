@@ -24,8 +24,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl:
-            "https://github.com/everydotorg/charity-api-docs"
+          editUrl: "https://github.com/everydotorg/charity-api-docs",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
