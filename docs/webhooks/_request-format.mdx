@@ -2,9 +2,12 @@ The webhook request will be a JSON-formatted string with the following
 properties:
 
 - `chargeId: <string>`
-  - Unique ID to the donation. Matches the “Charge ID” of donations in the nonprofit Admin Dashboard.
+  - Unique ID to the donation. Matches the “Charge ID” of donations in the
+    nonprofit Admin Dashboard.
 - `partnerDonationId: <string | undefined>`
-  - The partner donation ID as specified using our [Donate link](../donate-link.md) or [Donate Button](../donate-button.md). `undefined` if not specified.
+  - The partner donation ID as specified using our
+    [Donate link](../donate-link.md) or [Donate Button](../donate-button.md).
+    `undefined` if not specified.
 - `firstName: <string | undefined>`
   - `undefined` if the donor chose not to share this info with the nonprofit.
 - `lastName: <string | undefined | null>`
@@ -16,15 +19,20 @@ properties:
 - `toNonprofit: <object>`
   - An object with the following properties:
     - `slug: <string>`
-      - The slug that identifies the nonprofit. [Every.org](http://every.org) uses the slug to construct the nonprofit's URL as follows: `every.org/<slug>`
+      - The slug that identifies the nonprofit. [Every.org](http://every.org)
+        uses the slug to construct the nonprofit's URL as follows:
+        `every.org/<slug>`
     - `ein: <string | undefined>`
-      - The nonprofit's EIN. `undefined` if the receiving organization does not have an EIN, as in the case where they are fiscally sponsored.
+      - The nonprofit's EIN. `undefined` if the receiving organization does not
+        have an EIN, as in the case where they are fiscally sponsored.
     - `name: <string>`
       - The nonprofit's displayable name.
 - `amount: <string>`
-  - Numerical amount in the unit defined by the ISO `currency` code, represented as a string.
+  - Numerical amount in the unit defined by the ISO `currency` code, represented
+    as a string.
 - `currency: <string>`
-  - Currency code as defined in [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)
+  - Currency code as defined in
+    [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)
 - `frequency: <"Monthly"|"One-time">`
 - `donationDate: <string Date>`
   - Date that the donation was initiated

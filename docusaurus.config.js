@@ -24,8 +24,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl:
-            "https://github.com/everydotorg/charity-api-docs"
+          editUrl: "https://github.com/everydotorg/charity-api-docs",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -67,6 +66,22 @@ const config = {
                 label: "Intro",
                 to: "/docs/intro",
               },
+              {
+                label: "Nonprofit Search",
+                to: "/docs/nonprofit-search"
+              },
+              {
+                label: "Donate Button",
+                to: "/docs/donate-button"
+              },
+              {
+                label: "Donate Link",
+                to: "/docs/donate-link"
+              },
+              {
+                label: "Webhooks",
+                to: "/docs/webhooks"
+              }
             ],
           },
         ],

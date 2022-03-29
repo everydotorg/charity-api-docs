@@ -4,7 +4,8 @@ sidebar_position: 2
 
 # Nonprofit Search
 
-The [Every.org](http://every.org) Nonprofit Search API enables you to leverage our nonprofit databases and search infrastructure in your project.
+The [Every.org](http://every.org) Nonprofit Search API enables you to leverage
+our nonprofit databases and search infrastructure in your project.
 
 # Usage
 
@@ -18,9 +19,14 @@ We currently have two endpoints:
 
 ## Authentication
 
-To use API endpoints, you need to get a public API key to send along with requests - please request one by email [partners@every.org](mailto:partners@every.org) and explaining your use case and expected traffic.
+To use API endpoints, you need to get a public API key to send along with
+requests - please request one by email
+[partners@every.org](mailto:partners@every.org) and explaining your use case and
+expected traffic.
 
-This can be used client side or server side, the api key can be made public— it is not a secret, though we reserve the right to block api keys at any time if there is inappropriate usage.
+This can be used client side or server side, the api key can be made public— it
+is not a secret, though we reserve the right to block api keys at any time if
+there is inappropriate usage.
 
 ## Endpoint reference
 
@@ -42,9 +48,14 @@ curl "https://partners.every.org/v0.2/nonprofit/maps?apiKey=myPublicApiKey"
 
 ### `GET /v0.2/search/:searchTerm`
 
-This is designed for very low latency and high throughput, so we recommend using it client side and calling on every single key stroke so that as people type these see nonprofit names appear in realtime. For an example of this suggested UX in action, check out [https://www.every.org/new](https://www.every.org/new) or [https://givingmultiplier.org/](https://givingmultiplier.org/).
+This is designed for very low latency and high throughput, so we recommend using
+it client side and calling on every single key stroke so that as people type
+these see nonprofit names appear in realtime. For an example of this suggested
+UX in action, check out [https://www.every.org/new](https://www.every.org/new)
+or [https://givingmultiplier.org/](https://givingmultiplier.org/).
 
-Once you have an API key, then include it as a query parameter called `apiKey` like so, replacing the key with your real one:
+Once you have an API key, then include it as a query parameter called `apiKey`
+like so, replacing the key with your real one:
 
 #### JavaScript fetch
 
@@ -60,7 +71,8 @@ curl "https://partners.every.org/v0.2/search/pets?apiKey=myPublicApiKey"
 
 #### Filtering by tag
 
-You can filter the nonprofits returned by the search endpoint by using the `tags` parameter.
+You can filter the nonprofits returned by the search endpoint by using the
+`tags` parameter.
 
 You can query for multiple tags by joining them with a `,`, i.e. with
 `tags=humans,environment`, which will perform an OR filter and return nonprofits
@@ -157,4 +169,6 @@ Search returns a JSON response with the following format:
 }
 ```
 
-Please use the `name` and `logoUrl` to show people a realtime preview of nonprofits they could choose. Please send as many people as possible to give using the `profileUrl` :)
+Please use the `name` and `logoUrl` to show people a realtime preview of
+nonprofits they could choose. Please send as many people as possible to give
+using the `profileUrl` :)
