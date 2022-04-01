@@ -69,6 +69,11 @@ fetch("https://partners.every.org/v0.2/search/pets?apiKey=myPublicApiKey");
 curl "https://partners.every.org/v0.2/search/pets?apiKey=myPublicApiKey"
 ```
 
+#### Number of results
+
+Use the `take` parameter to specify the number of results to return. Maximum
+value is 50.
+
 #### Filtering by tag
 
 You can filter the nonprofits returned by the search endpoint by using the
