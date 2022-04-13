@@ -98,6 +98,9 @@ valid tags.
 This endpoint returns nonprofits associated with a given tag. Use it to let your
 users browse through nonprofits focused on a specific topic.
 
+[Click here](./types#tags) to learn more about tags and view the latest list of
+valid tags.
+
 #### Usage
 
 ##### JavaScript fetch
