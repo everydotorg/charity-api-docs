@@ -16,7 +16,7 @@ We currently have three endpoints:
 - Get details about a nonprofit: `GET /v0.2/nonprofit/:identifier`
   - identifier can be a slug, EIN, or nonprofit ID
 - Search nonprofits: `GET /v0.2/search/:searchTerm`
-- Browse nonprofits: `GET /v0.2/browse/:tag`
+- Browse nonprofits: `GET /v0.2/browse/:cause`
 
 ## Authentication
 
@@ -81,25 +81,25 @@ curl "https://partners.every.org/v0.2/search/pets?apiKey=myPublicApiKey"
 Use the `take` parameter to specify the number of results to return. Maximum
 value is 50.
 
-##### Filter by tag
+##### Filter by cause
 
 You can filter the nonprofits returned by the search endpoint by using the
-`tags` parameter.
+`causes` parameter.
 
-You can query for multiple tags by joining them with a `,`, i.e. with
-`tags=humans,environment`, which will perform an OR filter and return nonprofits
-that match either the `humans` or `environment` tags.
+You can query for multiple causes by joining them with a `,`, i.e. with
+`causes=humans,environment`, which will perform an OR filter and return
+nonprofits that match either the `humans` or `environment` causes.
 
-[Click here](./types#tags) to learn more about tags and view the latest list of
-valid tags.
+[Click here](./types#causes) to learn more about causes and view the latest list
+of valid causes.
 
-### `GET /v0.2/browse/:tag`
+### `GET /v0.2/browse/:cause`
 
-This endpoint returns nonprofits associated with a given tag. Use it to let your
-users browse through nonprofits focused on a specific topic.
+This endpoint returns nonprofits associated with a given cause. Use it to let
+your users browse through nonprofits focused on a specific topic.
 
-[Click here](./types#tags) to learn more about tags and view the latest list of
-valid tags.
+[Click here](./types#causes) to learn more about causes and view the latest list
+of valid causes.
 
 #### Usage
 

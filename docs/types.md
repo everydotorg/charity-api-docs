@@ -6,13 +6,13 @@ sidebar_position: 7
 
 Learn more about important types that you can find used in the Every.org API.
 
-## Tags
+## Causes
 
-Tags (eg. animals, humans, climate) are how we categorize nonprofits. Nonprofits
-are continuously being updated with relevant tags, and new tags are also added
-on a regular basis.
+Causes (eg. animals, humans, climate) are how we categorize nonprofits.
+Nonprofits are continuously being updated with relevant causes, and new causes
+are also added on a regular basis.
 
-Below is the list of valid tags: (last updated 2022-03-23)
+Below is the list of valid causes: (last updated 2022-03-23)
 
 ```
 aapi-led
