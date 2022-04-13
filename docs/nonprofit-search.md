@@ -7,15 +7,16 @@ sidebar_position: 2
 The [Every.org](http://every.org) Nonprofit Search API enables you to leverage
 our nonprofit databases and search infrastructure in your project.
 
-# Usage
+## Endpoints
 
 **Current version:** v0.2
 
-We currently have two endpoints:
+We currently have three endpoints:
 
-- Search nonprofits: `GET /v0.2/search/:searchTerm`
 - Get details about a nonprofit: `GET /v0.2/nonprofit/:identifier`
   - identifier can be a slug, EIN, or nonprofit ID
+- Search nonprofits: `GET /v0.2/search/:searchTerm`
+- Browse nonprofits: `GET /v0.2/browse/:cause`
 
 ## Authentication
 
@@ -34,13 +35,15 @@ there is inappropriate usage.
 
 Get data about a nonprofit from the Every.org API.
 
-#### JavaScript fetch
+#### Usage
+
+##### JavaScript fetch
 
 ```jsx
 fetch("https://partners.every.org/v0.2/nonprofit/maps?apiKey=myPublicApiKey");
 ```
 
-#### curl
+##### curl
 
 ```jsx
 curl "https://partners.every.org/v0.2/nonprofit/maps?apiKey=myPublicApiKey"
@@ -57,104 +60,78 @@ or [https://givingmultiplier.org/](https://givingmultiplier.org/).
 Once you have an API key, then include it as a query parameter called `apiKey`
 like so, replacing the key with your real one:
 
-#### JavaScript fetch
+#### Usage
+
+##### JavaScript fetch
 
 ```jsx
 fetch("https://partners.every.org/v0.2/search/pets?apiKey=myPublicApiKey");
 ```
 
-#### curl
+##### curl
 
 ```jsx
 curl "https://partners.every.org/v0.2/search/pets?apiKey=myPublicApiKey"
 ```
 
-#### Number of results
+#### Params
+
+##### Number of results
 
 Use the `take` parameter to specify the number of results to return. Maximum
 value is 50.
 
-#### Filtering by tag
+##### Filter by cause
 
 You can filter the nonprofits returned by the search endpoint by using the
-`tags` parameter.
+`causes` parameter.
 
-You can query for multiple tags by joining them with a `,`, i.e. with
-`tags=humans,environment`, which will perform an OR filter and return nonprofits
-that match either the `humans` or `environment` tags.
+You can query for multiple causes by joining them with a `,`, i.e. with
+`causes=humans,environment`, which will perform an OR filter and return
+nonprofits that match either the `humans` or `environment` causes.
 
-Below is the list of valid tags: (last updated 2022-03-23)
+[Click here](./types#causes) to learn more about causes and view the latest list
+of valid causes.
 
-```
-aapi-led
-adoption
-afghanistan
-animals
-athletics
-autism
-black-led
-buddhism
-cancer
-cats
-christianity
-climate
-conservation
-coronavirus
-culture
-dance
-disabilities
-disease
-dogs
-education
-environment
-filmandtv
-food-security
-freepress
-gender-equality
-health
-hinduism
-housing
-humans
-hurricane-laura
-immigrants
-indigenous-led
-indigenous-peoples
-islam
-judaism
-justice
-latine-led
-legal
-lgbt
-libraries
-mental-health
-middle-east
-museums
-music
-oceans
-poverty
-racial-justice
-refugees
-religion
-reproductive-justice
-research
-science
-seniors
-space
-theater
-transgender
-ukraine
-veterans
-visualart
-votingrights
-water
-wildfires
-wildlife
-women-led
-womens-health
-youth
+_Note this parameter used to be called `tags`, but it was renamed to `causes` to
+be more consistent with existing terminology. To ensure backwards compatibility,
+the `tags` parameter name will continue to work as expected, but we encourage
+you to use / upgrade to `causes` if possible._
+
+### `GET /v0.2/browse/:cause`
+
+This endpoint returns nonprofits associated with a given cause. Use it to let
+your users browse through nonprofits focused on a specific topic.
+
+[Click here](./types#causes) to learn more about causes and view the latest list
+of valid causes.
+
+#### Usage
+
+##### JavaScript fetch
+
+```jsx
+fetch("https://partners.every.org/v0.2/browse/animals?apiKey=myPublicApiKey");
 ```
 
-## Response types
+##### curl
+
+```jsx
+curl "https://partners.every.org/v0.2/search/animals?apiKey=myPublicApiKey"
+```
+
+#### Params
+
+##### Results per page
+
+Use the `take` parameter to specify the number of results to return per page.
+Maximum value is 100.
+
+##### Page number
+
+Use the `page` parameter to specify which page of results you want returned.
+
+# Response types
 
 Search returns a JSON response with the following format:
 
