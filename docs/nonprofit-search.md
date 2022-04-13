@@ -93,6 +93,11 @@ nonprofits that match either the `humans` or `environment` causes.
 [Click here](./types#causes) to learn more about causes and view the latest list
 of valid causes.
 
+_Note this parameter used to be called `tags`, but it was renamed to `causes` to
+be more consistent with existing terminology. To ensure backwards compatibility,
+the `tags` parameter name will continue to work as expected, but we encourage
+you to use / upgrade to `causes` if possible._
+
 ### `GET /v0.2/browse/:cause`
 
 This endpoint returns nonprofits associated with a given cause. Use it to let
