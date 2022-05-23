@@ -14,8 +14,6 @@ The basic format of a Donate link is as follows:
 
 `https://www.every.org/<nonprofit-identifier>#donate`
 
-Or alternatively, currently being deprecated, `https://www.every.org/<nonprofit-identifier>/donate`
-
 The `nonprofit-identifier` token can be replaced by either the nonprofit’s
 primary slug (which you might have if you’re using
 [Nonprofit Search API](./nonprofit-search.md)) or with the nonprofit’s EIN.
