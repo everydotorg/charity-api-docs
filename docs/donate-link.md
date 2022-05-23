@@ -12,7 +12,9 @@ in your own website or app.
 
 The basic format of a Donate link is as follows:
 
-`https://www.every.org/<nonprofit-identifier>/donate`
+`https://www.every.org/<nonprofit-identifier>#donate`
+
+Or alternatively, currently being deprecated, `https://www.every.org/<nonprofit-identifier>/donate`
 
 The `nonprofit-identifier` token can be replaced by either the nonprofit’s
 primary slug (which you might have if you’re using
@@ -77,15 +79,15 @@ Zip code: 42424
 
 ## Examples
 
-[https://www.every.org/givedirectly/donate](https://www.every.org/givedirectly/donate) -
+[https://www.every.org/givedirectly#donate](https://www.every.org/givedirectly#donate) -
 A simple donate link for GiveDirectly.
 
-[https://www.every.org/27-1661997/donate](https://www.every.org/27-1661997/donate) -
+[https://www.every.org/27-1661997#donate](https://www.every.org/27-1661997#donate) -
 A donate link for GiveDirectly that uses their EIN as the identifier.
 
-[https://www.every.org/givedirectly/donate?amount=10&frequency=MONTHLY](https://www.every.org/givedirectly/donate?amount=10&frequency=MONTHLY) -
+[https://www.every.org/givedirectly?amount=10&frequency=MONTHLY#donate](https://www.every.org/givedirectly?amount=10&frequency=MONTHLY#donate) -
 A donate link for GiveDirectly that specifies a monthly donation of $10.
 
-[https://www.every.org/givedirectly/donate?no_exit=true&success_url=https%3A%2F%2Fgivingmultiplier.org](https://www.every.org/givedirectly/donate?no_exit=true&success_url=https%3A%2F%2Fgivingmultiplier.org) -
+[https://www.every.org/givedirectly?no_exit=true&success_url=https%3A%2F%2Fgivingmultiplier.org#donate](https://www.every.org/givedirectly?no_exit=true&success_url=https%3A%2F%2Fgivingmultiplier.org#donate) -
 A donate link that hides the donation modal background and redirects the donor
 to givingmultiplier.org when they complete their donation.
