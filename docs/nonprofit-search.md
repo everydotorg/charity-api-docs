@@ -154,3 +154,16 @@ Search returns a JSON response with the following format:
 Please use the `name` and `logoUrl` to show people a realtime preview of
 nonprofits they could choose. Please send as many people as possible to give
 using the `profileUrl` :)
+
+## Rate limits
+
+We strive to keep this API open and available for use without restrictions.
+However in order to prevent abuse we apply the following limits to each endpoint
+by default:
+
+- Nonprofit details: 100 requests / minute / key
+- Search: 500 requests / minute / key
+- Browse: 500 requests / minute / key
+
+If you need higher rate limits, please contact us at
+[partners@every.org](mailto:partners@every.org).
