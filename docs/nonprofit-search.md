@@ -21,9 +21,7 @@ We currently have three endpoints:
 ## Authentication
 
 To use API endpoints, you need to get a public API key to send along with
-requests - please request one by email
-[partners@every.org](mailto:partners@every.org) and explaining your use case and
-expected traffic.
+requests - to generate API keys go to our [API key dashboard](https://www.every.org/developer).
 
 This can be used client side or server side, the api key can be made public— it
 is not a secret, though we reserve the right to block api keys at any time if
