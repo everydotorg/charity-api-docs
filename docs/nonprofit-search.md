@@ -131,6 +131,48 @@ Use the `page` parameter to specify which page of results you want returned.
 
 # Response types
 
+Details endpoint returns a JSON response with the following format:
+
+```jsx
+{
+  "data": {
+    "nonprofit": {
+      "id": "75924760-cd27-4ecc-a9d4-c0660c08961a",
+      "name": "Homeward Pet Adoption Center",
+      "primarySlug": "homewardpet",
+      "ein": "911526803",
+      "isDisbursable": true,
+      "description": "Our Homeward Pet's mission is to transform the lives of cats and dogs in need through compassionate medical care, positive behavior training, and successful adoption while building a more humane community.",
+      "descriptionLong": null,
+      "locationAddress": "WOODINVILLE, WA",
+      "nteeCode": "D20",
+      "nteeCodeMeaning": {
+        "majorCode": "D",
+        "majorMeaning": "Animal Related",
+        "decileCode": "D20",
+        "decileMeaning": "Animal Protection and Welfare"
+      },
+      "logoCloudinaryId": "faja_profile/yx2bf7ajag59igzhv7uk",
+      "coverImageCloudinaryId": "faja_cover/vkevswcstg86vnkf2ssk",
+      "logoUrl": "https://res.cloudinary.com/everydotorg/image/upload/c_lfill,w_24,h_24,dpr_2/c_crop,ar_24:24/q_auto,f_auto,fl_progressive/faja_profile/yx2bf7ajag59igzhv7uk",
+      "coverImageUrl": "https://res.cloudinary.com/everydotorg/image/upload/f_auto,c_limit,w_3840,q_80/faja_cover/vkevswcstg86vnkf2ssk",
+      "profileUrl": "https://www.every.org/homewardpet"
+    },
+    "nonprofitTags": [
+      {
+        "id": "fae0216b-07ce-463d-bdf5-d84ceb51e6a3",
+        "tagName": "animals",
+        "causeCategory": "ANIMALS",
+        "title": "Animals",
+        "tagImageCloudinaryId": "animals_hjoysx",
+        "tagUrl": "https://www.every.org/animals",
+        "tagImageUrl": "https://res.cloudinary.com/everydotorg/image/upload/c_lfill,w_24,h_24,dpr_2/c_crop,ar_24:24/q_auto,f_auto,fl_progressive/animals_hjoysx"
+      }
+    ]
+  }
+}
+````
+
 Search returns a JSON response with the following format:
 
 ```jsx
