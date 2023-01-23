@@ -32,9 +32,9 @@ various aspects of the donation experience.
 
 - `email` - specify donor's email
 
-- `firstName` - specify donor's first name.
+- `first_name` - specify donor's first name.
 
-- `lastName` - specify donor's last name.
+- `last_name` - specify donor's last name.
 
 - `description` - customize the text on the nonprofit's card in the donation
   modal.
