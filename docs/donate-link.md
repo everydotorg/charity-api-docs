@@ -60,6 +60,11 @@ various aspects of the donation experience.
 
 - `theme_color` - Customize the primary theme color of the donation modal.
 
+- `method` - Specify the allowed donation methods. Allowed values are `card`,
+  `bank`, `paypal`, `venmo`, `pay` (mobile payments), `crypto`, `stocks`, and
+  `daf`. Multiple options can be specified using commas: i.e.
+  `card,bank,paypal`.
+
 ### Testing
 
 Replace `www.every.org` with `staging.every.org` to create links that work
