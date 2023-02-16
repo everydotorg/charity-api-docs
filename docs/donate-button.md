@@ -8,7 +8,7 @@ The open-source [Every.org](http://every.org) Donate button provides a beautiful
 donation experience so that you can accept donations for your nonprofit on your
 website immediately, just by copying in a code snippet into your webpage.
 
-[Click here to see a demo](https://embeds.every.org/0.3) showing what it looks
+[Click here to see a demo](https://embeds.every.org/0.4) showing what it looks
 like.
 
 ![Gif of donate button usage](../static/img/donate-button.gif)
