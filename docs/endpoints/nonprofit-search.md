@@ -20,18 +20,16 @@ We currently have three endpoints:
 
 ## Authentication
 
-To use API endpoints, you need to get a public API key to send along with
-requests - to generate API keys go to our [API key dashboard](https://www.every.org/developer).
-
-This can be used client side or server side, the api key can be made public— it
-is not a secret, though we reserve the right to block api keys at any time if
-there is inappropriate usage.
+All nonprofit search endpoints should be authenticated with your
+[public key](./authentication#public-keys).
 
 ## Endpoint reference
 
 ### `GET /v0.2/nonprofit/:identifier`
 
 Get data about a nonprofit from the Every.org API.
+
+Authentication: [public key](./authentication#public-keys)
 
 #### Usage
 
@@ -55,8 +53,7 @@ these see nonprofit names appear in realtime. For an example of this suggested
 UX in action, check out [https://www.every.org/new](https://www.every.org/new)
 or [https://givingmultiplier.org/](https://givingmultiplier.org/).
 
-Once you have an API key, then include it as a query parameter called `apiKey`
-like so, replacing the key with your real one:
+Authentication: [public key](./authentication#public-keys)
 
 #### Usage
 
@@ -101,8 +98,10 @@ you to use / upgrade to `causes` if possible._
 This endpoint returns nonprofits associated with a given cause. Use it to let
 your users browse through nonprofits focused on a specific topic.
 
-[Click here](./types#causes) to learn more about causes and view the latest list
-of valid causes.
+[Click here](../types#causes) to learn more about causes and view the latest
+list of valid causes.
+
+Authentication: [public key](./authentication#public-keys)
 
 #### Usage
 
@@ -171,7 +170,7 @@ Details endpoint returns a JSON response with the following format:
     ]
   }
 }
-````
+```
 
 Search returns a JSON response with the following format:
 

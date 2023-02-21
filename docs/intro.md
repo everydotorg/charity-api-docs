@@ -2,16 +2,16 @@
 sidebar_position: 1
 ---
 
-# Intro
+# Introduction
 
 Use Every.org's free fundraising APIs to create innovative nonprofit
 experiences.
 
 # Get started
 
-To get started working with our APIs, please reach out to us by email at
-[partners@every.org](mailto:partners@every.org?subject=I%20am%20interested%20in%20using%20Every.org%20APIs),
-and we will be happy to guide you to integrate with your project.
+To get started working with our APIs, go to
+[every.org/charity-api](https://www.every.org/charity-api) to create an account
+(if you haven't already) and access your developer dashboard.
 
 # Our Open APIs
 
