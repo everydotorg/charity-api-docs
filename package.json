@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": false,
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "scripts": {
     "docusaurus": "docusaurus",
