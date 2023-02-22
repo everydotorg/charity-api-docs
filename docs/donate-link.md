@@ -16,7 +16,8 @@ The basic format of a Donate link is as follows:
 
 The `nonprofit-identifier` token can be replaced by either the nonprofit’s
 primary slug (which you might have if you’re using
-[Nonprofit Search API](./nonprofit-search.md)) or with the nonprofit’s EIN.
+[Nonprofit Search API](./endpoints/nonprofit-search.md)) or with the nonprofit’s
+EIN.
 
 ### Parameters
 

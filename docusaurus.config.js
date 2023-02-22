@@ -67,8 +67,16 @@ const config = {
                 to: "/docs/intro",
               },
               {
+                label: "Authentication",
+                to: "/docs/endpoints/authentication"
+              },
+              {
                 label: "Nonprofit Search",
-                to: "/docs/nonprofit-search"
+                to: "/docs/endpoints/nonprofit-search"
+              },
+              {
+                label: "Fundraisers",
+                to: "/docs/endpoints/fundraisers"
               },
               {
                 label: "Donate Button",
