@@ -24,7 +24,18 @@ of it in action at [givingmultiplier.org/](https://givingmultiplier.org/).
 
 ### View the docs
 
-[Nonprofit Search API](./nonprofit-search.md)
+[Nonprofit Search API](./endpoints/nonprofit-search.md)
+
+## Fundraisers
+
+Our Fundraisers API allows you to programtically create fundraisers for the
+nonprofits on Every.org. You can share the fundraiser links with donors and then
+track how much each fundraiser has raised, making it easy to build nonprofit
+fundraising into your own app.
+
+### View the docs
+
+[Fundraisers API](./endpoints/fundraisers.md)
 
 ## Donate Button
 
