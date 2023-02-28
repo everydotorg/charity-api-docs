@@ -25,10 +25,10 @@ format:
     "donationId": "82957c6a-3d29-4690-a99f-732731bb3d08",
     // An ISO-formatted date string
     "donationDate": "2022-12-01T01:21:47.415Z",
-    // A unique identifier for the user. Again, doesn't necessarily need to be a
+    // A unique identifier for the donor. Again, doesn't necessarily need to be a
     // UUID, but it should be something that you can use to uniquely identify
     // the donor within your system.
-    "userId": "772e3d02-0ad7-4144-8f5b-45bb90f8c077",
+    "donorId": "772e3d02-0ad7-4144-8f5b-45bb90f8c077",
     // Donor's first name
     "firstName": "MacKenzie",
     // Donor's last name
