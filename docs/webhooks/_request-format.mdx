@@ -36,8 +36,8 @@ properties:
 - `frequency: <"Monthly"|"One-time">`
 - `donationDate: <string Date>`
   - Date that the donation was initiated
-- `publicComment: <string | undefined>`
-  - A publicly available comment for this donation written by the donor showing at every.org.
+- `publicTestimony: <string | undefined>`
+  - A publicly available comment for this donation written by the donor showing at every.org that can be shared.
 - `privateNote: <string | undefined>`
   - A private note for the nonprofit written by the donor.
 
@@ -59,7 +59,7 @@ Example request body:
   "currency": "USD",
   "frequency": "Monthly",
 	"donationDate": "2022-02-03T05:00:16.175Z",
-  "publicComment": "I love animals",
+  "publicTestimony": "I love animals",
   "privateNote": "Thank you for the fantastic work!"
 }
 ```
