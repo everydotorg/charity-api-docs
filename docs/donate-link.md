@@ -54,6 +54,10 @@ various aspects of the donation experience.
 
 - `share_info` - Set whether sharing info is checked by default.
 
+- `designation` - Specify the designation for the donation. Note that Every.org
+  grants are unrestricted, so this is only a recommendation to the nonprofit,
+  not a legal restriction.
+
 - `webhook_token` - Specify the token associated with your
   [Partner Webhook](./webhooks/partner-webhook.mdx). Including this parameter
   will cause a notification to be sent to your webhook for every donation
