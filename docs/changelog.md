@@ -8,6 +8,10 @@ For full details on what's changed, view the
 [Github repository](https://github.com/everydotorg/charity-api-docs/commits/main)
 for this documentation.
 
+## 2023-03-22
+
+- Add the `designation` parameter to the donate link documentation
+
 ## 2023-02-21
 
 - Initialize changelog
