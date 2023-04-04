@@ -45,6 +45,9 @@ various aspects of the donation experience.
 
 - `success_url` - specify a url to which to redirect the user after they have
   successfully completed their donation.
+  
+- `exit_url` - specify the url to which to redirect the user after clicking
+  the exit button without completing donation
 
 - `partner_donation_id` - Specify a unique ID that you want to be associated
   with this donation.
