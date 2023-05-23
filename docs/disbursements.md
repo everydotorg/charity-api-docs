@@ -50,7 +50,7 @@ format:
     "designation": "Jim's fundraiser",
     // Whether to share donor info through to the recipient nonprofit. Valid
     // values are "NONE" or "NAME_AND_EMAIL"
-    "shareDonorInfo": "NAME_AND_EMAIL"
+    "shareDonorInfo": "NAME_AND_EMAIL",
     // Optional property to indicate the Every.org fundraiser that the donation
     // should be associated with
     "fundraiserId": "32ab8cc9-e895-4374-8955-a32433fc193d"
