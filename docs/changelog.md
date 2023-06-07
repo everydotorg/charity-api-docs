@@ -8,6 +8,10 @@ For full details on what's changed, view the
 [Github repository](https://github.com/everydotorg/charity-api-docs/commits/main)
 for this documentation.
 
+## 2023-06-06
+
+- Updated cause list with latest causes.
+
 ## 2023-05-22
 
 - Add support for the `fundraiserId` field in the disbursements batch file

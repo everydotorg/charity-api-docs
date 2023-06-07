@@ -12,13 +12,14 @@ Causes (eg. animals, humans, climate) are how we categorize nonprofits.
 Nonprofits are continuously being updated with relevant causes, and new causes
 are also added on a regular basis.
 
-Below is the list of valid causes: (last updated 2022-03-23)
+Below is the list of valid causes: (last updated 2023-06-06)
 
 ```
 aapi-led
 adoption
 afghanistan
 animals
+art
 athletics
 autism
 black-led
@@ -44,7 +45,7 @@ health
 hinduism
 housing
 humans
-hurricane-laura
+hurricane-ian
 immigrants
 indigenous-led
 indigenous-peoples
@@ -56,15 +57,15 @@ legal
 lgbt
 libraries
 mental-health
-middle-east
 museums
 music
 oceans
+parks
 poverty
 racial-justice
+radio
 refugees
 religion
-reproductive-justice
 research
 science
 seniors
@@ -73,7 +74,6 @@ theater
 transgender
 ukraine
 veterans
-visualart
 votingrights
 water
 wildfires
