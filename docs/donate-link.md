@@ -45,12 +45,14 @@ various aspects of the donation experience.
 
 - `success_url` - specify a url to which to redirect the user after they have
   successfully completed their donation.
-  
-- `exit_url` - specify the url to which to redirect the user after clicking
-  the exit button without completing donation
+- `exit_url` - specify the url to which to redirect the user after clicking the
+  exit button without completing donation
 
 - `partner_donation_id` - Specify a unique ID that you want to be associated
   with this donation.
+
+- `partner_metadata` - a base64 encoded json object that will be forwarded to
+  you in the partner webhook notification.
 
 - `require_share_info` - If present, requires that the donor share their contact
   info for the donation.
