@@ -155,7 +155,8 @@ Details endpoint returns a JSON response with the following format:
       "coverImageCloudinaryId": "faja_cover/vkevswcstg86vnkf2ssk",
       "logoUrl": "https://res.cloudinary.com/everydotorg/image/upload/c_lfill,w_24,h_24,dpr_2/c_crop,ar_24:24/q_auto,f_auto,fl_progressive/faja_profile/yx2bf7ajag59igzhv7uk",
       "coverImageUrl": "https://res.cloudinary.com/everydotorg/image/upload/f_auto,c_limit,w_3840,q_80/faja_cover/vkevswcstg86vnkf2ssk",
-      "profileUrl": "https://www.every.org/homewardpet"
+      "profileUrl": "https://www.every.org/homewardpet",
+      "websiteUrl": "http://www.homewardpet.org"
     },
     "nonprofitTags": [
       {
@@ -184,6 +185,7 @@ Search returns a JSON response with the following format:
 			"ein": "911526803",
 			"logoCloudinaryId": "faja_profile/yx2bf7ajag59igzhv7uk",
 			"logoUrl": "https://res.cloudinary.com/everydotorg/image/upload/c_lfill,w_24,h_24,dpr_2/c_crop,ar_24:24/q_auto,f_auto,fl_progressive/faja_profile/yx2bf7ajag59igzhv7uk",
+      "websiteUrl": "http://www.homewardpet.org",
 			"matchedTerms": ["pet"]
 		}, ...
   ]
