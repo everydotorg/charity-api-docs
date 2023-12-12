@@ -12,6 +12,10 @@ for this documentation.
 
 - Add the `gift` option to supported values for the donate link `method` param.
 
+## 2023-06-06
+
+- Updated cause list with latest causes.
+
 ## 2023-05-22
 
 - Add support for the `fundraiserId` field in the disbursements batch file

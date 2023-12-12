@@ -51,6 +51,9 @@ various aspects of the donation experience.
 - `partner_donation_id` - Specify a unique ID that you want to be associated
   with this donation.
 
+- `partner_metadata` - a base64 encoded json object that will be forwarded to
+  you in the partner webhook notification.
+
 - `require_share_info` - If present, requires that the donor share their contact
   info for the donation.
 
