@@ -45,9 +45,8 @@ various aspects of the donation experience.
 
 - `success_url` - specify a url to which to redirect the user after they have
   successfully completed their donation.
-  
-- `exit_url` - specify the url to which to redirect the user after clicking
-  the exit button without completing donation
+- `exit_url` - specify the url to which to redirect the user after clicking the
+  exit button without completing donation
 
 - `partner_donation_id` - Specify a unique ID that you want to be associated
   with this donation.
@@ -69,8 +68,8 @@ various aspects of the donation experience.
 - `theme_color` - Customize the primary theme color of the donation modal.
 
 - `method` - Specify the allowed donation methods. Allowed values are `card`,
-  `bank`, `paypal`, `venmo`, `pay` (mobile payments), `crypto`, `stocks`, and
-  `daf`. Multiple options can be specified using commas: i.e.
+  `bank`, `paypal`, `venmo`, `pay` (mobile payments), `crypto`, `stocks`, `daf`,
+  and `gift` (gift cards). Multiple options can be specified using commas: i.e.
   `card,bank,paypal`.
 
 ### Testing
