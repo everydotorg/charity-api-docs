@@ -8,6 +8,10 @@ For full details on what's changed, view the
 [Github repository](https://github.com/everydotorg/charity-api-docs/commits/main)
 for this documentation.
 
+## 2023-12-12
+
+- Add the `gift` option to supported values for the donate link `method` param.
+
 ## 2023-06-06
 
 - Updated cause list with latest causes.
