@@ -26,8 +26,8 @@ various aspects of the donation experience.
 
 - `amount` - specify donation amount.
 
-- `suggestedAmounts` - specify a comma-separated list of suggested donation amounts 
-  that will appear as buttons below the amount input field. 
+- `suggestedAmounts` - specify a comma-separated list of up to five suggested
+  donation amounts that will appear as buttons below the amount input field.
 
 - `min_value` - specify a minimum value for the donation
 
