@@ -12,6 +12,10 @@ for this documentation.
 
 - Add pagination information to the response for the /browse endpoint
 
+## 2023-12-12
+
+- Add the `gift` option to supported values for the donate link `method` param.
+
 ## 2023-06-06
 
 - Updated cause list with latest causes.

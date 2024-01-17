@@ -71,8 +71,8 @@ various aspects of the donation experience.
 - `theme_color` - Customize the primary theme color of the donation modal.
 
 - `method` - Specify the allowed donation methods. Allowed values are `card`,
-  `bank`, `paypal`, `venmo`, `pay` (mobile payments), `crypto`, `stocks`, and
-  `daf`. Multiple options can be specified using commas: i.e.
+  `bank`, `paypal`, `venmo`, `pay` (mobile payments), `crypto`, `stocks`, `daf`,
+  and `gift` (gift cards). Multiple options can be specified using commas: i.e.
   `card,bank,paypal`.
 
 ### Testing

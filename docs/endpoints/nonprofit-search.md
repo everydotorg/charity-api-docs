@@ -228,6 +228,22 @@ Please use the `name` and `logoUrl` to show people a realtime preview of
 nonprofits they could choose. Please send as many people as possible to give
 using the `profileUrl` :)
 
+### Pagination
+
+When using the `browse` route the response will include pagination details with the following format:
+
+```jsx
+{
+  "nonprofits": [...],
+  "pagination": {
+    "page":1,
+    "pages":9,
+    "page_size":10,
+    "total_results":88
+  }
+}
+```
+
 ## Rate limits
 
 We strive to keep this API open and available for use without restrictions.
