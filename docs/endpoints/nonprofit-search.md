@@ -192,6 +192,38 @@ Search returns a JSON response with the following format:
 }
 ```
 
+Browse returns a JSON response with the following format:
+
+```jsx
+{
+  "nonprofits": [
+    {
+      "description": "Lil BUB is a one of a kind space cat. Since landing on Earth, she's raised over $1,000,000 for homeless pets nationwide.. Lil BUB’s Big Fund exists to advocate for special needs companion animals and build a community that celebrates and fosters the",
+      "ein": "844229672",
+      "name": "Lil BUB's Big Fund",
+      "profileUrl": "https://www.every.org/lilbubsbigfund",
+      "logoUrl": "https://res.cloudinary.com/everydotorg/image/upload/c_lfill,w_24,h_24,dpr_2/c_crop,ar_24:24/q_auto,f_auto,fl_progressive/profile_pics/dsor2nxk97p87umlwhvt",
+      "coverImageUrl": "https://res.cloudinary.com/everydotorg/image/upload/f_auto,c_limit,w_3840,q_80/profile_pics/ipxxsfqxtt6skku7vh1z",
+      "logoCloudinaryId": "profile_pics/dsor2nxk97p87umlwhvt",
+      "slug": "lilbubsbigfund",
+      "location": "BLOOMINGTON, IN",
+      "websiteUrl": "https://www.goodjobbub.org",
+      "tags": [
+        "dogs",
+        "cats",
+        "animals"
+      ]
+    }...
+  ],
+  "pagination": {
+    "page": 1,
+    "pages": 1000,
+    "page_size": 10,
+    "total_results": 10000
+  }
+}
+```
+
 Please use the `name` and `logoUrl` to show people a realtime preview of
 nonprofits they could choose. Please send as many people as possible to give
 using the `profileUrl` :)

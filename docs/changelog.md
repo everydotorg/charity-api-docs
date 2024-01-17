@@ -8,6 +8,10 @@ For full details on what's changed, view the
 [Github repository](https://github.com/everydotorg/charity-api-docs/commits/main)
 for this documentation.
 
+## 2024-01-02
+
+- Add pagination information to the response for the /browse endpoint
+
 ## 2023-12-12
 
 - Add the `gift` option to supported values for the donate link `method` param.
