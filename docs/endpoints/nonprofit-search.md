@@ -202,7 +202,7 @@ When using the `browse` route the response will include pagination details with 
 
 ```jsx
 {
-	"nonprofits": [...],
+  "nonprofits": [...],
   "pagination": {
     "page":1,
     "pages":9,
