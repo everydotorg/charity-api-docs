@@ -34,6 +34,8 @@ properties:
 - `amount: <string>`
   - Numerical amount in the unit defined by the ISO `currency` code, represented
     as a string.
+- `netAmount: <string>`
+  - Net amount of the donation after subtracting third party fees. 
 - `currency: <string>`
   - Currency code as defined in
     [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)
@@ -60,6 +62,7 @@ Example request body:
     "name": "Give Directly"
   },
   "amount": "1000.00",
+  "netAmount": "970.07",
   "currency": "USD",
   "frequency": "Monthly",
 	"donationDate": "2022-02-03T05:00:16.175Z",
