@@ -128,7 +128,7 @@ Maximum value is 100.
 
 Use the `page` parameter to specify which page of results you want returned.
 
-# Response types
+## Response types
 
 Details endpoint returns a JSON response with the following format:
 
@@ -230,7 +230,8 @@ using the `profileUrl` :)
 
 ### Pagination
 
-When using the `browse` route the response will include pagination details with the following format:
+When using the `browse` route the response will include pagination details with
+the following format:
 
 ```jsx
 {
