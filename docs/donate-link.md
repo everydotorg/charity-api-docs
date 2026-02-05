@@ -32,7 +32,7 @@ various aspects of the donation experience.
 - `min_value` - specify a minimum value for the donation
 
 - `frequency` - specify donation frequency. Allowed values are `ONCE` or
-  `MONTHLY`
+  `MONTHLY` OR `YEARLY`
 
 - `email` - specify donor's email
 
