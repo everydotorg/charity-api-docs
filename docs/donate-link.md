@@ -19,6 +19,8 @@ primary slug (which you might have if you’re using
 [Nonprofit Search API](./endpoints/nonprofit-search.md)) or with the nonprofit’s
 EIN.
 
+The Donate Link also works for fundraisers. For multi-nonprofit fundraisers, the `nonprofit-identifier` is `special-fundraiser`.
+
 ### Parameters
 
 The link can also be customized with the following URL parameters which control
@@ -107,3 +109,6 @@ A donate link for GiveDirectly that specifies a monthly donation of $10.
 [https://www.every.org/givedirectly?no_exit=true&success_url=https%3A%2F%2Fgivingmultiplier.org#donate](https://www.every.org/givedirectly?no_exit=true&success_url=https%3A%2F%2Fgivingmultiplier.org#donate) -
 A donate link that hides the donation modal background and redirects the donor
 to givingmultiplier.org when they complete their donation.
+
+[https://www.every.org/givedirectly/f/match-poverty-eradication#donate](https://www.every.org/givedirectly/f/match-poverty-eradication#donate)  -
+A simple donate link for a fundraiser for GiveDirectly.
