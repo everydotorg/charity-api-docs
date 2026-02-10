@@ -13,6 +13,8 @@ nonprofit fundraisers and create new ones.
 
 Enables retrieving details about an existing nonprofit fundraiser.
 
+For multi-nonprofit fundraisers, the `:nonprofitIdentifier` is `special-fundraiser`.
+
 Authentication: [public key](./authentication#public-keys)
 
 #### Usage
@@ -34,6 +36,8 @@ curl "https://partners.every.org/v0.2/nonprofit/wphfund/fundraiser/wphf-giving-t
 ### `GET /v0.2/nonprofit/:nonprofitIdentifier/fundraiser/:fundraiserIdentifier/raised`
 
 Returns details about how much an existing nonprofit fundraiser has raised.
+
+For multi-nonprofit fundraisers, the `:nonprofitIdentifier` is `special-fundraiser`.
 
 Authentication: [public key](./authentication#public-keys)
 
