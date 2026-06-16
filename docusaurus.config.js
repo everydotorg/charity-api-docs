@@ -71,8 +71,8 @@ const config = {
                 to: "/docs/endpoints/authentication"
               },
               {
-                label: "Nonprofit Search",
-                to: "/docs/endpoints/nonprofit-search"
+                label: "Nonprofits",
+                to: "/docs/endpoints/nonprofits"
               },
               {
                 label: "Fundraisers",

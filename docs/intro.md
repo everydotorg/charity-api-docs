@@ -15,16 +15,16 @@ To get started working with our APIs, go to
 
 # Our Open APIs
 
-## Nonprofit Search
+## Nonprofits
 
-The Nonprofit Search API allows you to incorporate search of over 1 million
+The Nonprofits API allows you to incorporate search of over 1 million
 501(c)(3) organizations into your website's API, get metadata about each
 nonprofit, and create a donate link for others to quickly donate. See an example
 of it in action at [givingmultiplier.org/](https://givingmultiplier.org/).
 
 ### View the docs
 
-[Nonprofit Search API](./endpoints/nonprofit-search.md)
+[Nonprofits API](./endpoints/nonprofits.md)
 
 ## Fundraisers
 

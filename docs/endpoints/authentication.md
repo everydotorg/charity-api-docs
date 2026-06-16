@@ -12,7 +12,7 @@ API keys can be generated from the
 ## Public keys
 
 Public keys are required to query publicly accessible data via endpoints like
-[nonprofit search](./nonprofit-search.md).
+[nonprofit search](./nonprofits.md).
 
 Public keys are suitable for use in both server-side and public-facing client
 side applications. While they don't need to be kept secret, we reserve the right

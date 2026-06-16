@@ -119,6 +119,37 @@ fetch(`https://partners.every.org/v0.2/fundraiser`, {
   },
 ```
 
+#### Multi-nonprofit fundraisers
+
+For creating multi-nonprofit fundraisers, you must provide the special-fundraisers UUID (`ddacc399-20c5-462e-80e1-97fa958071ea`) as `nonprofitId`, the type must be `MULTIPLE_NONPROFITS`, and `forNonprofts` must be an array of nonprofit UUIDs. The optional `forNonprofitWeights` of equal length can be provided for a multi-nonprofit fundraiser with non-equal weights. 
+
+##### JavaScript
+
+```jsx
+fetch(`https://partners.every.org/v0.2/fundraiser`, {
+  method: HttpMethod.POST,
+  headers: {
+    "Content-Type": "application/json",
+    /* eslint-enable @typescript-eslint/naming-convention */
+    Authorization: `Basic ${Buffer.from(`${publicKey}:${privateKey}`).toString(
+      "base64"
+    )}`,
+  },
+  body: {
+    nonprofitId: "ddacc399-20c5-462e-80e1-97fa958071ea",
+    type: "MULTIPLE_NONPROFITS",
+    forNonprofits: ["c1c38cb5-16d6-4aca-a949-83c8e7cc1b88", "864cd781-ab4e-4f21-9c0a-0dbdf654a1ae"],
+    forNonprofitWeights: [45, 55], //optional, defaults to equal
+    title: "Give a lot and get a lot!",
+    description: "I'm raising $1,000 this summer to support my two favorite charities, GiveDirectly and GivingMultiplier.",
+    startDate: new Date("2026-06-01").toISOString(),
+    endDate: new Date("2026-07-01").toISOString(),
+    goal: 100000,
+    raisedOffline: null,
+    currency: "USD",
+  },
+```
+
 Example base64 encoded image format with every.org's logo:
 
 ```

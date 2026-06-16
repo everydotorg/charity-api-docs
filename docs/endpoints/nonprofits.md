@@ -2,9 +2,9 @@
 sidebar_position: 2
 ---
 
-# Nonprofit Search
+# Nonprofits
 
-The [Every.org](http://every.org) Nonprofit Search API enables you to leverage
+The [Every.org](http://every.org) Nonprofits API enables you to leverage
 our nonprofit databases and search infrastructure in your project.
 
 ## Endpoints
@@ -20,7 +20,7 @@ We currently have three endpoints:
 
 ## Authentication
 
-All nonprofit search endpoints should be authenticated with your
+All nonprofits endpoints should be authenticated with your
 [public key](./authentication#public-keys).
 
 ## Endpoint reference
