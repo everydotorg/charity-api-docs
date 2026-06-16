@@ -33,6 +33,20 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            from: "/docs/endpoints/nonprofit-search",
+            to: "/docs/endpoints/nonprofits",
+          },
+        ],
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
