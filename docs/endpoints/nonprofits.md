@@ -31,18 +31,41 @@ Get data about a nonprofit from the Every.org API.
 
 Authentication: [public key](./authentication#public-keys)
 
+The `:identifier` can be one of:
+- **Slug** — the nonprofit's URL slug (e.g., `maps`, `red-cross`)
+- **EIN** — 9-digit Employer Identification Number, **no dashes, no prefix** (e.g., `526001065`, not `52-6001065` or `ein:52-6001065`)
+- **Nonprofit ID** — Every.org's internal UUID (e.g., `75924760-cd27-4ecc-a9d4-c0660c08961a`)
+
 #### Usage
 
-##### JavaScript fetch
+##### By slug
 
 ```jsx
 fetch("https://partners.every.org/v0.2/nonprofit/maps?apiKey=myPublicApiKey");
 ```
 
-##### curl
+```
+curl "https://partners.every.org/v0.2/nonprofit/maps?apiKey=myPublicApiKey"
+```
+
+##### By EIN (9 digits, no dashes)
 
 ```jsx
-curl "https://partners.every.org/v0.2/nonprofit/maps?apiKey=myPublicApiKey"
+fetch("https://partners.every.org/v0.2/nonprofit/526001065?apiKey=myPublicApiKey");
+```
+
+```
+curl "https://partners.every.org/v0.2/nonprofit/526001065?apiKey=myPublicApiKey"
+```
+
+##### By nonprofit ID (UUID)
+
+```jsx
+fetch("https://partners.every.org/v0.2/nonprofit/75924760-cd27-4ecc-a9d4-c0660c08961a?apiKey=myPublicApiKey");
+```
+
+```
+curl "https://partners.every.org/v0.2/nonprofit/75924760-cd27-4ecc-a9d4-c0660c08961a?apiKey=myPublicApiKey"
 ```
 
 ### `GET /v0.2/search/:searchTerm`
@@ -114,7 +137,7 @@ fetch("https://partners.every.org/v0.2/browse/animals?apiKey=myPublicApiKey");
 ##### curl
 
 ```jsx
-curl "https://partners.every.org/v0.2/search/animals?apiKey=myPublicApiKey"
+curl "https://partners.every.org/v0.2/browse/animals?apiKey=myPublicApiKey"
 ```
 
 #### Params
