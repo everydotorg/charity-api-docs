@@ -102,7 +102,6 @@ fetch(`https://partners.every.org/v0.2/fundraiser`, {
   method: HttpMethod.POST,
   headers: {
     "Content-Type": "application/json",
-    /* eslint-enable @typescript-eslint/naming-convention */
     Authorization: `Basic ${Buffer.from(`${publicKey}:${privateKey}`).toString(
       "base64"
     )}`,
