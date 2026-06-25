@@ -8,6 +8,13 @@ For full details on what's changed, view the
 [Github repository](https://github.com/everydotorg/charity-api-docs/commits/main)
 for this documentation.
 
+## 2026-06-16
+
+- Renamed nonprofit search page URL from `/nonprofit-search` to `/nonprofits`
+- Expanded nonprofit endpoint docs: document all three identifier types (slug, EIN, UUID) with examples; call out EIN format (9 digits, no dashes, no `ein:` prefix)
+- Fix browse endpoint curl example (was incorrectly pointing to `/search`)
+- Add multi-nonprofit fundraiser documentation to the fundraisers endpoint
+
 ## 2024-01-02
 
 - Add pagination information to the response for the /browse endpoint
