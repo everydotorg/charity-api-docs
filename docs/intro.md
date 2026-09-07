@@ -67,7 +67,7 @@ notified about donations to their nonprofit, while the Partner Webhook enables
 developers to get notified about donations made via their
 [Donate Link](./donate-link.md).
 
-==At this time, Every.org does not provide programmatic donations or disbursements via API. All donations must be completed by a donor on Every.org.==
+>At this time, Every.org does not provide programmatic donations or disbursements via API. All donations must be completed by a donor on Every.org.
 
 ### View the docs
 
