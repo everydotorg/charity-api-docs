@@ -67,8 +67,6 @@ notified about donations to their nonprofit, while the Partner Webhook enables
 developers to get notified about donations made via their
 [Donate Link](./donate-link.md).
 
->At this time, Every.org does not provide programmatic donations or disbursements via API. All donations must be completed by a donor on Every.org.
-
 ### View the docs
 
 - [Webhooks Overview](./webhooks)
@@ -81,5 +79,4 @@ developers to get notified about donations made via their
 - [Fungi Foundation](https://ffungi.org/)
 - [Noble Strength Foundation](https://www.noblestrengthfoundation.org/)
 
-If you would like to be added to this list, please let us know with an email to
-[partners@every.org](mailto:partners@every.org?subject=Please%20add%20my%20project%20to%20the%20Partners%20API%20homepage)!
+>At this time, Every.org does not provide programmatic donations or disbursements via API. All donations must be completed by a donor on Every.org.
