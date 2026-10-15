@@ -1,5 +1,6 @@
 The webhook request will be a JSON-formatted string with the following
-properties:
+properties. Partner webhooks include donor info by default; Every.org can
+configure your webhook to exclude it.
 
 - `chargeId: <string>`
   - Unique ID to the donation. Matches the “Charge ID” of donations in the
@@ -13,16 +14,16 @@ properties:
     [Donate link](../donate-link.md) or [Donate Button](../donate-button.md).
     `undefined` if not specified.
 - `firstName: <string | undefined>`
-  - `"Anonymous"` if donor info is not shared with the partner.
+  - `"Anonymous"` if your webhook is configured to exclude donor info.
 - `lastName: <string | undefined | null>`
-  - `"Donor"` if donor info is not shared with the partner.
+  - `"Donor"` if your webhook is configured to exclude donor info.
   - `null` if the donor has no associated last name.
 - `email: <string | undefined | null>`
-  - `undefined` if donor info is not shared with the partner.
+  - `undefined` if your webhook is configured to exclude donor info.
   - `null` if the donor has no associated email.
 - `address: <object | undefined>`
   - The address the donor entered when donating. Only included if the donor
-    entered an address and donor info is shared with the partner.
+    entered an address and your webhook is not configured to exclude donor info.
   - An object with the following properties, each of which may be missing:
     - `streetAddress: <string | undefined>`
     - `city: <string | undefined>`

@@ -11,16 +11,22 @@ properties:
 - `designation: <string | undefined>`
   - The program or project this donation is intended to support.
 - `firstName: <string | undefined>`
-  - `undefined` if the donor chose not to share this info with the nonprofit.
+  - Included if the donor shared their info with the nonprofit or made the
+    donation public.
+  - `"Anonymous"` otherwise.
 - `lastName: <string | undefined | null>`
-  - `undefined` if the donor chose not to share this info with the nonprofit.
+  - Included if the donor shared their info with the nonprofit or made the
+    donation public.
+  - `"Donor"` otherwise.
   - `null` if the donor has no associated last name.
-- `email: <string | null>`
-  - `undefined` if the donor chose not to share this info with the nonprofit.
+- `email: <string | undefined | null>`
+  - `undefined` if the donor did not share their info with the nonprofit.
   - `null` if the donor has no associated email.
 - `address: <object | undefined>`
   - The address the donor entered when donating. Only included if the donor
-    entered an address and chose to share their info with the nonprofit.
+    entered an address and shared their info with the nonprofit, either by
+    choice or because the [Donate link](../donate-link.md) used
+    `require_share_info`.
   - An object with the following properties, each of which may be missing:
     - `streetAddress: <string | undefined>`
     - `city: <string | undefined>`

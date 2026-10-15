@@ -12,6 +12,8 @@ for this documentation.
 
 - Add the donor `address` field to the Nonprofit Donation and Partner webhook
   payloads
+- Correct the Nonprofit Donation webhook `firstName`, `lastName` and `email`
+  descriptions for donors who did not share their info
 
 ## 2026-06-16
 
