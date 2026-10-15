@@ -18,6 +18,15 @@ properties:
 - `email: <string | null>`
   - `undefined` if the donor chose not to share this info with the nonprofit.
   - `null` if the donor has no associated email.
+- `address: <object | undefined>`
+  - The address the donor entered when donating. Only included if the donor
+    entered an address and chose to share their info with the nonprofit.
+  - An object with the following properties, each of which may be missing:
+    - `streetAddress: <string | undefined>`
+    - `city: <string | undefined>`
+    - `state: <string | undefined>`
+    - `postalCode: <string | undefined>`
+    - `country: <string | undefined>`
 - `toNonprofit: <object>`
   - An object with the following properties:
     - `slug: <string>`
@@ -66,6 +75,13 @@ Example request body:
   "firstName": "Jane",
   "lastName": "Doe",
   "email": "jane@emailprovider.org",
+  "address": {
+    "streetAddress": "123 Main St",
+    "city": "San Francisco",
+    "state": "California",
+    "postalCode": "94103",
+    "country": "US"
+  },
   "toNonprofit": {
     "slug": "givedirectly",
     "ein": "271661997",

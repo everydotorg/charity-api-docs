@@ -8,6 +8,11 @@ For full details on what's changed, view the
 [Github repository](https://github.com/everydotorg/charity-api-docs/commits/main)
 for this documentation.
 
+## 2026-10-15
+
+- Add the donor `address` field to the Nonprofit Donation and Partner webhook
+  payloads
+
 ## 2026-06-16
 
 - Renamed nonprofit search page URL from `/nonprofit-search` to `/nonprofits`
