@@ -8,6 +8,13 @@ For full details on what's changed, view the
 [Github repository](https://github.com/everydotorg/charity-api-docs/commits/main)
 for this documentation.
 
+## 2026-11-16
+
+- Correct the API key docs: the nonprofit details, fundraiser details and
+  fundraiser raised endpoints accept requests without a key
+- Document which endpoints require a key and the responses for a missing or
+  invalid key
+
 ## 2026-10-15
 
 - Add the donor `address` field to the Nonprofit Donation and Partner webhook

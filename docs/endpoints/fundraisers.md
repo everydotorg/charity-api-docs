@@ -17,6 +17,9 @@ For multi-nonprofit fundraisers, the `:nonprofitIdentifier` is `special-fundrais
 
 Authentication: [public key](./authentication#public-keys)
 
+API key: optional. The `apiKey` parameter can be omitted; requests without it
+are rate limited per IP address.
+
 #### Usage
 
 ##### JavaScript fetch
@@ -40,6 +43,9 @@ Returns details about how much an existing nonprofit fundraiser has raised.
 For multi-nonprofit fundraisers, the `:nonprofitIdentifier` is `special-fundraiser`.
 
 Authentication: [public key](./authentication#public-keys)
+
+API key: optional. The `apiKey` parameter can be omitted; requests without it
+are rate limited per IP address.
 
 #### Response format
 
@@ -74,6 +80,8 @@ Enables creating new fundraisers. The fundraiser creator will be the username
 associated with the keys used to authenticate the request.
 
 Authentication: [private key](./authentication#private-keys)
+
+API key: required
 
 #### Request body
 

@@ -21,7 +21,9 @@ We currently have three endpoints:
 ## Authentication
 
 All nonprofits endpoints should be authenticated with your
-[public key](./authentication#public-keys).
+[public key](./authentication#public-keys). Search and browse require it. The
+nonprofit details endpoint also accepts requests without a key; see
+[which endpoints require a key](./authentication#which-endpoints-require-a-key).
 
 ## Endpoint reference
 
@@ -30,6 +32,9 @@ All nonprofits endpoints should be authenticated with your
 Get data about a nonprofit from the Every.org API.
 
 Authentication: [public key](./authentication#public-keys)
+
+API key: optional. The `apiKey` parameter can be omitted; requests without it
+are rate limited per IP address.
 
 The `:identifier` can be one of:
 - **Slug** — the nonprofit's URL slug (e.g., `maps`, `red-cross`)
@@ -78,6 +83,8 @@ or [https://givingmultiplier.org/](https://givingmultiplier.org/).
 
 Authentication: [public key](./authentication#public-keys)
 
+API key: required
+
 #### Usage
 
 ##### JavaScript fetch
@@ -125,6 +132,8 @@ your users browse through nonprofits focused on a specific topic.
 list of valid causes.
 
 Authentication: [public key](./authentication#public-keys)
+
+API key: required
 
 #### Usage
 
@@ -274,7 +283,8 @@ We strive to keep this API open and available for use without restrictions.
 However in order to prevent abuse we apply the following limits to each endpoint
 by default:
 
-- Nonprofit details: 100 requests / minute / key
+- Nonprofit details: 100 requests / minute / key, or per IP address for requests
+  without a key
 - Search: 500 requests / minute / key
 - Browse: 500 requests / minute / key
 
