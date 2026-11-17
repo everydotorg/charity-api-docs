@@ -21,9 +21,7 @@ We currently have three endpoints:
 ## Authentication
 
 All nonprofits endpoints should be authenticated with your
-[public key](./authentication#public-keys). Search and browse require it. For
-the nonprofit details endpoint it is optional; see
-[which endpoints require a key](./authentication#which-endpoints-require-a-key).
+[public key](./authentication#public-keys).
 
 ## Endpoint reference
 
@@ -282,8 +280,7 @@ We strive to keep this API open and available for use without restrictions.
 However in order to prevent abuse we apply the following limits to each endpoint
 by default:
 
-- Nonprofit details: 100 requests / minute / key, or per IP address for requests
-  without a key
+- Nonprofit details: 100 requests / minute / key
 - Search: 500 requests / minute / key
 - Browse: 500 requests / minute / key
 

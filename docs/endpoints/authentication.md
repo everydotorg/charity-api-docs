@@ -4,34 +4,10 @@ sidebar_position: 2
 
 # Authentication
 
-Every.org uses API keys to authenticate requests to our API endpoints. Most
-endpoints require a key. For a few read-only endpoints, the key is optional.
+Every.org uses API keys to authenticate requests to our API endpoints.
 
 API keys can be generated from the
 [developer dashboard](https://www.every.org/developer).
-
-## Which endpoints require a key
-
-| Endpoint                                                                                                                         | API key                                 |
-| -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| [Get details about a nonprofit](./nonprofits.md#get-v02nonprofitidentifier)                                                      | Optional                                |
-| [Get details about a fundraiser](./fundraisers.md#get-v02nonprofitnonprofitidentifierfundraiserfundraiseridentifier)             | Optional                                |
-| [Get how much a fundraiser has raised](./fundraisers.md#get-v02nonprofitnonprofitidentifierfundraiserfundraiseridentifierraised) | Optional                                |
-| [Search nonprofits](./nonprofits.md#get-v02searchsearchterm)                                                                     | Required ([public key](#public-keys))   |
-| [Browse nonprofits](./nonprofits.md#get-v02browsecause)                                                                          | Required ([public key](#public-keys))   |
-| [Create a fundraiser](./fundraisers.md#post-v02fundraiser)                                                                       | Required ([private key](#private-keys)) |
-
-Requests without a key to an endpoint where the key is optional are rate limited
-per IP address. Adding your key helps us identify your requests and apply your
-account's rate limits.
-
-When an endpoint requires a key, requests without a valid key return these
-errors:
-
-| Request                            | Response                              |
-| ---------------------------------- | ------------------------------------- |
-| No key, or an empty `apiKey` value | `400` with the body `API key missing` |
-| Unknown or disabled public key     | `403` with the body `Forbidden`       |
 
 ## Public keys
 
