@@ -75,8 +75,6 @@ associated with the keys used to authenticate the request.
 
 Authentication: [private key](./authentication#private-keys)
 
-API key: required
-
 #### Request body
 
 The `POST` request body should be a JSON-formatted object with the following

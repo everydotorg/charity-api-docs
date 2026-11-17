@@ -78,8 +78,6 @@ or [https://givingmultiplier.org/](https://givingmultiplier.org/).
 
 Authentication: [public key](./authentication#public-keys)
 
-API key: required
-
 #### Usage
 
 ##### JavaScript fetch
@@ -127,8 +125,6 @@ your users browse through nonprofits focused on a specific topic.
 list of valid causes.
 
 Authentication: [public key](./authentication#public-keys)
-
-API key: required
 
 #### Usage
 
