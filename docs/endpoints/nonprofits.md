@@ -29,9 +29,7 @@ All nonprofits endpoints should be authenticated with your
 
 Get data about a nonprofit from the Every.org API.
 
-Authentication: [public key](./authentication#public-keys)
-
-API key: optional. Adding your key helps us identify your requests.
+Authentication: [public key](./authentication#public-keys) (optional).
 
 The `:identifier` can be one of:
 - **Slug** — the nonprofit's URL slug (e.g., `maps`, `red-cross`)

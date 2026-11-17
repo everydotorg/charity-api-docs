@@ -15,9 +15,7 @@ Enables retrieving details about an existing nonprofit fundraiser.
 
 For multi-nonprofit fundraisers, the `:nonprofitIdentifier` is `special-fundraiser`.
 
-Authentication: [public key](./authentication#public-keys)
-
-API key: optional. Adding your key helps us identify your requests.
+Authentication: [public key](./authentication#public-keys) (optional).
 
 #### Usage
 
@@ -41,9 +39,7 @@ Returns details about how much an existing nonprofit fundraiser has raised.
 
 For multi-nonprofit fundraisers, the `:nonprofitIdentifier` is `special-fundraiser`.
 
-Authentication: [public key](./authentication#public-keys)
-
-API key: optional. Adding your key helps us identify your requests.
+Authentication: [public key](./authentication#public-keys) (optional).
 
 #### Response format
 
