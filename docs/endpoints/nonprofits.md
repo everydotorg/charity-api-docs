@@ -21,8 +21,8 @@ We currently have three endpoints:
 ## Authentication
 
 All nonprofits endpoints should be authenticated with your
-[public key](./authentication#public-keys). Search and browse require it. The
-nonprofit details endpoint also accepts requests without a key; see
+[public key](./authentication#public-keys). Search and browse require it. For
+the nonprofit details endpoint it is optional; see
 [which endpoints require a key](./authentication#which-endpoints-require-a-key).
 
 ## Endpoint reference
@@ -33,8 +33,7 @@ Get data about a nonprofit from the Every.org API.
 
 Authentication: [public key](./authentication#public-keys)
 
-API key: optional. The `apiKey` parameter can be omitted; requests without it
-are rate limited per IP address.
+API key: optional. Adding your key helps us identify your requests.
 
 The `:identifier` can be one of:
 - **Slug** — the nonprofit's URL slug (e.g., `maps`, `red-cross`)

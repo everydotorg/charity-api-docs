@@ -5,8 +5,7 @@ sidebar_position: 2
 # Authentication
 
 Every.org uses API keys to authenticate requests to our API endpoints. Most
-endpoints require a key. A few read-only endpoints also accept requests without
-one.
+endpoints require a key. For a few read-only endpoints, the key is optional.
 
 API keys can be generated from the
 [developer dashboard](https://www.every.org/developer).
@@ -23,8 +22,8 @@ API keys can be generated from the
 | [Create a fundraiser](./fundraisers.md#post-v02fundraiser)                                                                       | Required ([private key](#private-keys)) |
 
 Requests without a key to an endpoint where the key is optional are rate limited
-per IP address. If you have a key, send it on these requests too so we can
-attribute usage to your account and apply your account's rate limits.
+per IP address. Adding your key helps us identify your requests and apply your
+account's rate limits.
 
 When an endpoint requires a key, requests without a valid key return these
 errors:

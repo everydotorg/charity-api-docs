@@ -10,8 +10,8 @@ for this documentation.
 
 ## 2026-11-16
 
-- Correct the API key docs: the nonprofit details, fundraiser details and
-  fundraiser raised endpoints accept requests without a key
+- Correct the API key docs: the key is optional for the nonprofit details,
+  fundraiser details and fundraiser raised endpoints
 - Document which endpoints require a key and the responses for a missing or
   invalid key
 

@@ -17,8 +17,7 @@ For multi-nonprofit fundraisers, the `:nonprofitIdentifier` is `special-fundrais
 
 Authentication: [public key](./authentication#public-keys)
 
-API key: optional. The `apiKey` parameter can be omitted; requests without it
-are rate limited per IP address.
+API key: optional. Adding your key helps us identify your requests.
 
 #### Usage
 
@@ -44,8 +43,7 @@ For multi-nonprofit fundraisers, the `:nonprofitIdentifier` is `special-fundrais
 
 Authentication: [public key](./authentication#public-keys)
 
-API key: optional. The `apiKey` parameter can be omitted; requests without it
-are rate limited per IP address.
+API key: optional. Adding your key helps us identify your requests.
 
 #### Response format
 
